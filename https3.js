@@ -1,7 +1,7 @@
 function getAndPrintHTML(options) {
     var chunk = '';
     var https = require('https');
-    https.get(requestOptions, function(response) {
+    https.get(options, function(response) {
         response.setEncoding('utf-8');
 
         response.on('data', function(data){
